@@ -9,5 +9,12 @@ namespace WebApi.Controllers
 {
     public class PruebaController : ApiController
     {
+        [AllowAnonymous]
+        [HttpGet]
+        public IHttpActionResult ObtenerPalabra()
+        {
+            return Ok("Prueba");
+        }
+
     }
 }
